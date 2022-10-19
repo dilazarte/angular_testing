@@ -1,0 +1,37 @@
+<!-- <p>{{users[0].name}}</p>
+<p>{{users[0].username}}</p>
+<p>{{users[0].email}}</p>
+<p>{{users[0].company.name}}</p> -->
+
+<!-- <div class="container mt-3">
+	<h2>EQUIPO PIL</h2>
+	<div class="row justify-content-md-center g-4">
+		<div *ngFor="let user of users" class="card text-light bg-dark mb-3 col-md-4 col-sm-6" > <!--el estilo en linea rompe el diseño-->
+			<!-- <div class="card-header">{{user.name}}</div>
+				<div class="card-body">
+					<h5 class="card-title">{{user.email}}</h5>
+					<p class="card-text">{{user.company.name}}</p>
+			</div>
+		</div>
+	</div>
+</div> --> 
+
+<!--EQUIPO PIL-->
+
+<div class="container mt-3">
+	<h2>EQUIPO PIL</h2>
+	<div class="row ">
+		<div *ngFor="let user of users" class=" text-light col-md-4 col-sm-6" >
+				<div class="bg-dark card mb-1">
+					<div class="card-header">{{user.Nombre}} {{user.Apellido}}</div>
+					<div class="card-body">
+						<h5 class="card-title">{{user.Telefono}}</h5>
+						<p class="card-text">{{user.TipoNum}}</p>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- style="max-width: 18rem;" -->
